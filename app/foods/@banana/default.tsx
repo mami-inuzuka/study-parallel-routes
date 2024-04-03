@@ -1,7 +1,7 @@
 export default function DefaultPage() {
   return (
-    <main>
-      <h1>DefaultPage:Banana</h1>
-    </main>
+    <div>
+      <p>DefaultPage:Banana</p>
+    </div>
   );
 }
