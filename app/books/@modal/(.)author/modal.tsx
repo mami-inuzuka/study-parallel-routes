@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 export function Modal({ children }: { children: React.ReactNode }) {
@@ -27,6 +28,9 @@ export function Modal({ children }: { children: React.ReactNode }) {
         }}
       >
         <button onClick={() => router.back()}>Close modal</button>
+        <br />
+        <Link href="/books/author/1">Go to 1</Link>
+        <br />
         {children}
       </div>
     </div>
